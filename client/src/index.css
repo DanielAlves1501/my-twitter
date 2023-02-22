@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "chirp";
+  src: url("./assets/fonts/chirp_light.otf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "chirp";
+  src: url("./assets/fonts/chirp_thin.otf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "chirp";
+  src: url("./assets/fonts/chirp_regular.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "chirp";
+  src: url("./assets/fonts/chirp_medium.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "chirp";
+  src: url("./assets/fonts/chirp_bold.otf");
+  font-weight: bold;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "chirp";
+  src: url("./assets/fonts/chirp_heavy.otf");
+  font-weight: 600;
+}
+
+:root {
+  --blue: #1d9bf0;
+  --black: #272c30;
+  --gray: #a1a7ac;
+  --light-gray: #e6e7e7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "chirp";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Modal Window */
+
+.modal-title {
+  font-size: 31px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.modal-container {
+  width: 83%;
+  margin-top: 45px;
+  position: relative;
+  height: 100%;
+}
+
+.modal-before-arrow {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 24px;
+  position: absolute;
+  left: 20px;
+  color: var(--gray);
+  transition: all 0.3s ease;
+}
+
+.modal-before-arrow:hover {
+  color: #000;
+  background: var(--light-gray);
+}
+
+.modal-before-arrow .before-arrow-icon {
+  position: absolute;
+}
+
+.modal-input-container {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.modal-input-container input {
+  padding-top: 16px;
+  padding-left: 8px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  outline: none;
+  font-family: "chirp";
+  color: #747677;
+  font-size: 16px;
+}
+
+.modal-input-container input:focus {
+  border: 2px solid var(--blue);
+}
+
+.modal-input-container p {
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 10px;
+}
+
+.text-active {
+  font-size: 13px;
+  transform: translateY(-10px);
+  color: var(--blue);
+}
+
+.no-text {
+  color: #747677;
+}
+
+.modal-btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  background: var(--black);
+  color: #fff;
+  padding: 15px;
+  font-family: "chirp";
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-btn:hover {
+  opacity: 0.9;
+}
+
+/* ------ HOME ----- */
+
+/* HEADER */
+
+/* User Log Out Pop Up */
+
+.visible {
+  transition: all 0.3s ease;
+  scale: 1;
+}
+
+.hiden {
+  scale: 0;
+  transition: all 0.3s ease;
+}
+
+/* FEED */
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
