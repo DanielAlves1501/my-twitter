@@ -3,7 +3,7 @@ import Tweet from "../models/Tweet.js";
 
 export const getTweets = async (req, res) => {
   try {
-    const tweets = await Tweet.find();
+    const tweets = await Tweet.find({});
     res.status(200).json(tweets);
   } catch (error) {
     console.log(error);
